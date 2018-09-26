@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+	<title>Periodic table</title>
+	<meta charset="UTF-8">
+	<style>
+		*
+		{
+			margin: 0;
+			padding: 0;
+		}
+		header
+		{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			width: 100%;
+			height: 150px;
+			padding: 0;
+			background-image: url("https://s-i.huffpost.com/gen/1369548/images/n-BREAKING-BAD-628x314.jpg");
+			background-repeat: no-repeat;
+			background-size:  100%;
+			background-position: 100% 32%;
+		}
+		figure
+		{
+			width: 130px;
+			height: 150px;
+			margin: 0;
+			padding: 0;
+		}
+		figure  img
+		{
+			width: 100%;
+			height: 100%;
+		}
+		h1
+		{
+			width: 100%;
+			margin-left: 5%;
+			color: #2E86C1;
+			text-shadow: 3px 2px black;
+			font-style: italic;
+
+		}
+		table
+		{
+			
+			margin: 0 auto;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			width: 1080px;
+			table-layout: fixed;
+		}
+		td
+		{
+			width: 70px;
+			height: 70px;
+			text-align: center;
+		}
+		p
+		{
+			font-size: 11px;
+			margin-bottom: 1px;
+		}
+		.elemcell
+		{
+			padding: 0px;
+		}
+		.atomic_weight
+		{
+			height: 20px;
+			text-align: right;
+			margin-right: 3px;
+			margin-top: 3px;
+
+		}
+		.elem
+		{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 40px;
+			font-size: 29px;
+			
+		}
+		.elem_num
+		{
+			height: 20px;
+			text-align: left;
+			margin-left: 4px;
+
+		}
+		.elemredirect
+		{
+			font-size: 16px;
+			text-align: center;
+			line-height: 80px;
+		}
+		.non_metal
+		{
+			background-color: #a9aaaf;
+		}
+		.alkali_metal 
+		{
+			background-color: #fc914f;
+		}
+		.alkaline_earth_metal
+		{
+			background-color: #d8371b
+		}
+		.transition_metal
+		{
+			background-color: #ffdc15;
+		}
+		.metal
+		{
+			background-color: #3aa844;
+		}
+		.metalloid
+		{
+			background-color: #89c233;
+		}
+		.halogen
+		{
+			background-color: #3cb8c1;
+		}
+		.noble_gas
+		{
+			background-color: #0083cd;
+		}
+		.lanthanide
+		{
+			background-color: #7670af;
+		}
+		.actinide
+		{
+			background-color: #f293bb;
+		}
+		.colorswap:hover 
+		{
+			cursor: pointer;
+			background-color: #D2691E;
+		}
+
+		.pad td
+		{
+			height: 30px;
+		}
+		.infobar
+		{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+			width: 100%;
+			list-style: none;
+		}
+		.infobar li
+		{
+			display: flex;
+			align-items: center;
+			min-width: 150px;
+			height: 50px;
+		}
+		.infobar li p
+		{
+			margin-left: 5%;
+			font-size: 14px;
+		}
+		.colorsquare
+		{
+			min-width: 15px;
+			min-height: 15px;
+			margin-left: 5%;
+		}
+	</style>
+</head>
+	<body>
+		<header>
+			<figure><img src="http://www.koob.ru/foto/author/8002.jpg"></figure>
+			<h1>PERIODIC TABLE OF THE ELEMENTS</h1>
+		</header>
+		<ul class="infobar">
+			<li><div class="colorsquare" style="background-color: #a9aaaf"></div><p>Non-metal</p></li>
+			<li><div class="colorsquare" style="background-color: #fc914f"></div><p>Alkali metal</p></li>
+			<li><div class="colorsquare" style="background-color: #d8371b"></div><p>Alkaline earth metal</p></li>
+			<li><div class="colorsquare" style="background-color: #ffdc15"></div><p>Transition metal</p></li>
+			<li><div class="colorsquare" style="background-color: #89c233"></div><p>Metal</p></li>
+			<li><div class="colorsquare" style="background-color: #a9aaaf"></div><p>Metalloid</p></li>
+			<li><div class="colorsquare" style="background-color: #3cb8c1"></div><p>Halogen</p></li>
+			<li><div class="colorsquare" style="background-color: #0083cd"></div><p>Noble gas</p></li>
+			<li><div class="colorsquare" style="background-color: #7670af"></div><p>Lanthanide</p></li>
+			<li><div class="colorsquare" style="background-color: #f293bb"></div><p>Actinide</p></li>
+		</ul>
+		<table contenteditable="true">
+			<tbody>
+			<tr>
+				<td>
+					<p class="group">Group &#8594</p>
+					<p class="period">&#8595 Period</p>
+				</td>
+				<td><div class="wrapper"><p>1</p></div></td>
+				<td><p>2</p></td>
+				<td><p>3</p></td>
+				<td><p>4</p></td>
+				<td><p>5</p></td>
+				<td><p>6</p></td>
+				<td><p>7</p></td>
+				<td><p>8</p></td>
+				<td><p>9</p></td>
+				<td><p>10</p></td>
+				<td><p>11</p></td>
+				<td><p>12</p></td>
+				<td><p>13</p></td>
+				<td><p>14</p></td>
+				<td><p>15</p></td>
+				<td><p>16</p></td>
+				<td><p>17</p></td>
+				<td><p>18</p></td>
+			</tr>
+			<tr>
+				<td><p>1</p></td>
+				<td class="non_metal colorswap"><div class="elemcell"><p class="atomic_weight">1.0079</p><p class="elem"><b>H</b></p><p class="elem_num">1</p></div></td>
+				<td colspan="16"></td>
+				<td class="noble_gas colorswap"><div class="elemcell"><p class="atomic_weight">4.0026</p><p class="elem"><b>He</b></p><p class="elem_num">2</p></div></td>
+			</tr>
+			<tr>
+				<td><p>2</p></td>
+				<td class="alkali_metal colorswap"><div class="elemcell"><p class="atomic_weight">6.941</p><p class="elem"><b>Li</b></p><p class="elem_num">3</p></div></td>
+				<td class="alkaline_earth_metal colorswap"><div class="elemcell"><p class="atomic_weight">9.0122</p><p class="elem"><b>Be</b></p><p class="elem_num">4</p></div></td>
+				<td colspan="10"></td>
+				<td class="metalloid colorswap"><div class="elemcell"><p class="atomic_weight">10.811</p><p class="elem"><b>B</b></p><p class="elem_num">5</p></div></td>
+				<td class="non_metal colorswap"><div class="elemcell"><p class="atomic_weight">12.011</p><p class="elem"><b>C</b></p><p class="elem_num">6</p></div></td>
+				<td class="non_metal colorswap"><div class="elemcell"><p class="atomic_weight">14.007</p><p class="elem"><b>N</b></p><p class="elem_num">7</p></div></td>
+				<td class="non_metal colorswap"><div class="elemcell"><p class="atomic_weight">15.999</p><p class="elem"><b>O</b></p><p class="elem_num">8</p></div></td>
+				<td class="halogen colorswap"><div class="elemcell"><p class="atomic_weight">18.998</p><p class="elem"><b>F</b></p><p class="elem_num">9</p></div></td>
+				<td class="noble_gas colorswap"><div class="elemcell"><p class="atomic_weight">20.1797</p><p class="elem"><b>Ne</b></p><p class="elem_num">10</p></div></td>
+			</tr>
+			<tr>
+				<td><p>3</p></td>
+				<td class="alkali_metal colorswap"><div class="elemcell"><p class="atomic_weight">22.989</p><p class="elem"><b>Na</b></p><p class="elem_num">11</p></div></td>
+				<td class="alkaline_earth_metal colorswap"><div class="elemcell"><p class="atomic_weight">24.305</p><p class="elem"><b>Mg</b></p><p class="elem_num">12</p></div></td>
+				<td colspan="10"></td>
+				<td class="metal colorswap"><div class="elemcell"><p class="atomic_weight">26.981</p><p class="elem"><b>Al</b></p><p class="elem_num">13</p></div></td>
+				<td class="metalloid colorswap"><div class="elemcell"><p class="atomic_weight">28.085</p><p class="elem"><b>Si</b></p><p class="elem_num">14</p></div></td>
+				<td class="non_metal colorswap"><div class="elemcell"><p class="atomic_weight">30.974</p><p class="elem"><b>P</b></p><p class="elem_num">15</p></div></td>
+				<td class="non_metal colorswap"><div class="elemcell"><p class="atomic_weight">32.066</p><p class="elem"><b>S</b></p><p class="elem_num">16</p></div></td>
+				<td class="halogen colorswap"><div class="elemcell"><p class="atomic_weight">35.453</p><p class="elem"><b>Cl</b></p><p class="elem_num">17</p></div></td>
+				<td class="noble_gas colorswap"><div class="elemcell"><p class="atomic_weight">39.948</p><p class="elem"><b>Ar</b></p><p class="elem_num">18</p></div></td>
+			</tr>
+			<tr>
+				<td><p>4</p></td>
+				<td class="alkali_metal colorswap"><div class="elemcell"><p class="atomic_weight">39.098</p><p class="elem"><b>K</b></p><p class="elem_num">19</p></div></td>
+				<td class="alkaline_earth_metal colorswap"><div class="elemcell"><p class="atomic_weight">40.078</p><p class="elem"><b>Ca</b></p><p class="elem_num">20</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">44.955</p><p class="elem"><b>Sc</b></p><p class="elem_num">21</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">47.867</p><p class="elem"><b>Ti</b></p><p class="elem_num">22</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">50.9415</p><p class="elem"><b>V</b></p><p class="elem_num">23</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">51.9961</p><p class="elem"><b>Cr</b></p><p class="elem_num">24</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">54.938</p><p class="elem"><b>Mn</b></p><p class="elem_num">25</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">55.845</p><p class="elem"><b>Fe</b></p><p class="elem_num">26</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">58.933</p><p class="elem"><b>Co</b></p><p class="elem_num">27</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">58.6934</p><p class="elem"><b>Ni</b></p><p class="elem_num">28</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">63.546</p><p class="elem"><b>Cu</b></p><p class="elem_num">29</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">65.38</p><p class="elem"><b>Zn</b></p><p class="elem_num">30</p></div></td>
+				<td class="metal colorswap"><div class="elemcell"><p class="atomic_weight">69.723</p><p class="elem"><b>Ga</b></p><p class="elem_num">31</p></div></td>
+				<td class="metalloid colorswap"><div class="elemcell"><p class="atomic_weight">72.63</p><p class="elem"><b>Ge</b></p><p class="elem_num">32</p></div></td>
+				<td class="metalloid colorswap"><div class="elemcell"><p class="atomic_weight">74.921</p><p class="elem"><b>As</b></p><p class="elem_num">33</p></div></td>
+				<td class="non_metal colorswap"><div class="elemcell"><p class="atomic_weight">78.971</p><p class="elem"><b>Se</b></p><p class="elem_num">34</p></div></td>
+				<td class="halogen colorswap"><div class="elemcell"><p class="atomic_weight">79.904</p><p class="elem"><b>Br</b></p><p class="elem_num">35</p></div></td>
+				<td class="noble_gas colorswap"><div class="elemcell"><p class="atomic_weight">83.798</p><p class="elem"><b>Kr</b></p><p class="elem_num">36</p></div></td>
+			</tr>
+			<tr>
+				<td><p>5</p></td>
+				<td class="alkali_metal colorswap"><div class="elemcell"><p class="atomic_weight">85.467</p><p class="elem"><b>Rb</b></p><p class="elem_num">37</p></div></td>
+				<td class="alkaline_earth_metal colorswap"><div class="elemcell"><p class="atomic_weight">87.62</p><p class="elem"><b>Sr</b></p><p class="elem_num">38</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">88.9058</p><p class="elem"><b>Y</b></p><p class="elem_num">39</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">91.224</p><p class="elem"><b>Zr</b></p><p class="elem_num">40</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">92.9063</p><p class="elem"><b>Nb</b></p><p class="elem_num">41</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">95.95</p><p class="elem"><b>Mo</b></p><p class="elem_num">42</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">(98)</p><p class="elem"><b>Tc</b></p><p class="elem_num">43</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">101.07</p><p class="elem"><b>Ru</b></p><p class="elem_num">44</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">102.90</p><p class="elem"><b>Rh</b></p><p class="elem_num">45</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">106.42</p><p class="elem"><b>Pd</b></p><p class="elem_num">46</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">107.8682</p><p class="elem"><b>Ag</b></p><p class="elem_num">47</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">112.414</p><p class="elem"><b>Cd</b></p><p class="elem_num">48</p></div></td>
+				<td class="metal colorswap"><div class="elemcell"><p class="atomic_weight">114.818</p><p class="elem"><b>In</b></p><p class="elem_num">49</p></div></td>
+				<td class="metal colorswap"><div class="elemcell"><p class="atomic_weight">118.710</p><p class="elem"><b>Sn</b></p><p class="elem_num">50</p></div></td>
+				<td class="metalloid colorswap"><div class="elemcell"><p class="atomic_weight">121.760</p><p class="elem"><b>Sb</b></p><p class="elem_num">51</p></div></td>
+				<td class="metalloid colorswap"><div class="elemcell"><p class="atomic_weight">127.60</p><p class="elem"><b>Te</b></p><p class="elem_num">52</p></div></td>
+				<td class="halogen colorswap"><div class="elemcell"><p class="atomic_weight">126.90</p><p class="elem"><b>I</b></p><p class="elem_num">53</p></div></td>
+				<td class="noble_gas colorswap"><div class="elemcell"><p class="atomic_weight">131.293</p><p class="elem"><b>Xe</b></p><p class="elem_num">54</p></div></td>
+			</tr>
+			<tr>
+				<td><p>6</p></td>
+				<td class="alkali_metal colorswap"><div class="elemcell"><p class="atomic_weight"><b>132.905</b></p><p class="elem"><b>Cs</b></p><p class="elem_num">55</p></div></td>
+				<td class="alkaline_earth_metal colorswap"><div class="elemcell"><p class="atomic_weight">137.327</p><p class="elem"><b>Ba</b></p><p class="elem_num">56</p></div></td>
+				<td class="lanthanide colorswap"><div class="elemcell"><p class="elemredirect"><b>57-71*</b></p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">178.49</p><p class="elem"><b>Hf</b></p><p class="elem_num">72</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">180.94</p><p class="elem"><b>Ta</b></p><p class="elem_num">73</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">183.84</p><p class="elem"><b>W</b></p><p class="elem_num">74</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">186.207</p><p class="elem"><b>Re</b></p><p class="elem_num">75</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">190.23</p><p class="elem"><b>Os</b></p><p class="elem_num">76</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">192.217</p><p class="elem"><b>Ir</b></p><p class="elem_num">77</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">195.084</p><p class="elem"><b>Pt</b></p><p class="elem_num">78</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">196.96</p><p class="elem"><b>Au</b></p><p class="elem_num">79</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">200.59</p><p class="elem"><b>Hg</b></p><p class="elem_num">80</p></div></td>
+				<td class="metal colorswap"><div class="elemcell"><p class="atomic_weight">204.38</p><p class="elem"><b>Tl</b></p><p class="elem_num">81</p></div></td>
+				<td class="metal colorswap"><div class="elemcell"><p class="atomic_weight">207.2</p><p class="elem"><b>Pb</b></p><p class="elem_num">82</p></div></td>
+				<td class="metal colorswap"><div class="elemcell"><p class="atomic_weight">208.98</p><p class="elem"><b>Bi</b></p><p class="elem_num">83</p></div></td>
+				<td class="metalloid colorswap"><div class="elemcell"><p class="atomic_weight">(209)</p><p class="elem"><b>Po</b></p><p class="elem_num">84</p></div></td>
+				<td class="halogen colorswap"><div class="elemcell"><p class="atomic_weight">(210)</p><p class="elem"><b>At</b></p><p class="elem_num">85</p></div></td>
+				<td class="noble_gas colorswap"><div class="elemcell"><p class="atomic_weight">(222)</p><p class="elem"><b>Rn</b></p><p class="elem_num">86</p></div></td>
+			</tr>
+			<tr>
+				<td><p>7</p></td>
+				<td class="alkali_metal colorswap"><div class="elemcell"><p class="atomic_weight">(223)</p><p class="elem"><b>Fr</b></p><p class="elem_num">87</p></div></td>
+				<td class="alkaline_earth_metal colorswap"><div class="elemcell"><p class="atomic_weight">(226)</p><p class="elem"><b>Ra</b></p><p class="elem_num">88</p></div></td>
+				<td class="actinide colorswap"><div class="elemcell"><p class="elemredirect"><b>89-103**</b></p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">(267)</p><p class="elem"><b>Rf</b></p><p class="elem_num">104</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">(268)</p><p class="elem"><b>Db</b></p><p class="elem_num">105</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">(271)</p><p class="elem"><b>Sg</b></p><p class="elem_num">106</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">(272)</p><p class="elem"><b>Bh</b></p><p class="elem_num">107</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">(270)</p><p class="elem"><b>Hs</b></p><p class="elem_num">108</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">(276)</p><p class="elem"><b>Mt</b></p><p class="elem_num">109</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">(281)</p><p class="elem"><b>Ds</b></p><p class="elem_num">110</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">(280)</p><p class="elem"><b>Rg</b></p><p class="elem_num">111</p></div></td>
+				<td class="transition_metal colorswap"><div class="elemcell"><p class="atomic_weight">(285)</p><p class="elem"><b>Cn</b></p><p class="elem_num">112</p></div></td>
+				<td class="metal colorswap"><div class="elemcell"><p class="atomic_weight">(284)</p><p class="elem"><b>Uut</b></p><p class="elem_num">113</p></div></td>
+				<td class="metal colorswap"><div class="elemcell"><p class="atomic_weight">(289)</p><p class="elem"><b>Fl</b></p><p class="elem_num">114</p></div></td>
+				<td class="metal colorswap"><div class="elemcell"><p class="atomic_weight">(288)</p><p class="elem"><b>Uup</b></p><p class="elem_num">115</p></div></td>
+				<td class="metal colorswap"><div class="elemcell"><p class="atomic_weight">(293)</p><p class="elem"><b>Lv</b></p><p class="elem_num">116</p></div></td>
+				<td class="halogen colorswap"><div class="elemcell"><p class="atomic_weight">(294)</p><p class="elem"><b>Uus</b></p><p class="elem_num">117</p></div></td>
+				<td class="noble_gas colorswap"><div class="elemcell"><p class="atomic_weight">(294)</p><p class="elem"><b>Uuo</b></p><p class="elem_num">118</p></div></td>
+			</tr>
+			<tr class="pad">
+    			<td><br></td>
+			</tr>
+			<tr>
+				<td colspan="3"></td>
+				<td class="colorswap"><div class="elemcell"><p class="elemredirect"><b>*</b></p></div></td>
+				<td class="lanthanide colorswap"><div class="elemcell"><p class="atomic_weight">138.90</p><p class="elem"><b>La</b></p><p class="elem_num">57</p></div></td>
+				<td class="lanthanide colorswap"><div class="elemcell"><p class="atomic_weight">140.116</p><p class="elem"><b>Ce</b></p><p class="elem_num">58</p></div></td>
+				<td class="lanthanide colorswap"><div class="elemcell"><p class="atomic_weight">140.90</p><p class="elem"><b>Pr</b></p><p class="elem_num">59</p></div></td>
+				<td class="lanthanide colorswap"><div class="elemcell"><p class="atomic_weight">144.242</p><p class="elem"><b>Nd</b></p><p class="elem_num">60</p></div></td>
+				<td class="lanthanide colorswap"><div class="elemcell"><p class="atomic_weight">(145)</p><p class="elem"><b>Pm</b></p><p class="elem_num">61</p></div></td>
+				<td class="lanthanide colorswap"><div class="elemcell"><p class="atomic_weight">150.36</p><p class="elem"><b>Sm</b></p><p class="elem_num">62</p></div></td>
+				<td class="lanthanide colorswap"><div class="elemcell"><p class="atomic_weight">151.964</p><p class="elem"><b>Eu</b></p><p class="elem_num">63</p></div></td>
+				<td class="lanthanide colorswap"><div class="elemcell"><p class="atomic_weight">157.25</p><p class="elem"><b>Gd</b></p><p class="elem_num">64</p></div></td>
+				<td class="lanthanide colorswap"><div class="elemcell"><p class="atomic_weight">158.92</p><p class="elem"><b>Tb</b></p><p class="elem_num">65</p></div></td>
+				<td class="lanthanide colorswap"><div class="elemcell"><p class="atomic_weight">162.500</p><p class="elem"><b>Dy</b></p><p class="elem_num">66</p></div></td>
+				<td class="lanthanide colorswap"><div class="elemcell"><p class="atomic_weight">164.93</p><p class="elem"><b>Ho</b></p><p class="elem_num">67</p></div></td>
+				<td class="lanthanide colorswap"><div class="elemcell"><p class="atomic_weight">167.259</p><p class="elem"><b>Er</b></p><p class="elem_num">68</p></div></td>
+				<td class="lanthanide colorswap"><div class="elemcell"><p class="atomic_weight">168.93</p><p class="elem"><b>Tm</b></p><p class="elem_num">69</p></div></td>
+				<td class="lanthanide colorswap"><div class="elemcell"><p class="atomic_weight">173.054</p><p class="elem"><b>Yb</b></p><p class="elem_num">70</p></div></td>
+				<td class="lanthanide colorswap"><div class="elemcell"><p class="atomic_weight">174.9668</p><p class="elem"><b>Lu</b></p><p class="elem_num">71</p></div></td>
+			</tr>
+			<tr>
+				<td colspan="3"></td>
+				<td class="colorswap"><div class="elemcell"><p class="elemredirect"><b>**</b></p></div></td>
+				<td class="actinide colorswap"><div class="elemcell"><p class="atomic_weight">(227)</p><p class="elem"><b>Ac</b></p><p class="elem_num">89</p></div></td>
+				<td class="actinide colorswap"><div class="elemcell"><p class="atomic_weight">232.0377</p><p class="elem"><b>Th</b></p><p class="elem_num">90</p></div></td>
+				<td class="actinide colorswap"><div class="elemcell"><p class="atomic_weight">231.03</p><p class="elem"><b>Pa</b></p><p class="elem_num">91</p></div></td>
+				<td class="actinide colorswap"><div class="elemcell"><p class="atomic_weight">238.02</p><p class="elem"><b>U</b></p><p class="elem_num">92</p></div></td>
+				<td class="actinide colorswap"><div class="elemcell"><p class="atomic_weight">(237)</p><p class="elem"><b>Np</b></p><p class="elem_num">93</p></div></td>
+				<td class="actinide colorswap"><div class="elemcell"><p class="atomic_weight">(244)</p><p class="elem"><b>Pu</b></p><p class="elem_num">94</p></div></td>
+				<td class="actinide colorswap"><div class="elemcell"><p class="atomic_weight">(243)</p><p class="elem"><b>Am</b></p><p class="elem_num">95</p></div></td>
+				<td class="actinide colorswap"><div class="elemcell"><p class="atomic_weight">(247)</p><p class="elem"><b>Cm</b></p><p class="elem_num">96</p></div></td>
+				<td class="actinide colorswap"><div class="elemcell"><p class="atomic_weight">(247)</p><p class="elem"><b>Bk</b></p><p class="elem_num">97</p></div></td>
+				<td class="actinide colorswap"><div class="elemcell"><p class="atomic_weight">(251)</p><p class="elem"><b>Cf</b></p><p class="elem_num">98</p></div></td>
+				<td class="actinide colorswap"><div class="elemcell"><p class="atomic_weight">(252)</p><p class="elem"><b>Es</b></p><p class="elem_num">99</p></div></td>
+				<td class="actinide colorswap"><div class="elemcell"><p class="atomic_weight">(257)</p><p class="elem"><b>Fm</b></p><p class="elem_num">100</p></div></td>
+				<td class="actinide colorswap"><div class="elemcell"><p class="atomic_weight">(258)</p><p class="elem"><b>Md</b></p><p class="elem_num">101</p></div></td>
+				<td class="actinide colorswap"><div class="elemcell"><p class="atomic_weight">(259)</p><p class="elem"><b>No</b></p><p class="elem_num">102</p></div></td>
+				<td class="actinide colorswap"><div class="elemcell"><p class="atomic_weight">(262)</p><p class="elem"><b>Lr</b></p><p class="elem_num">103</p></div></td>
+			</tr>
+			
+			</tbody>	
+		</table>
+	</body>
+</html>

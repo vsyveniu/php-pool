@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>baloon</title>
+	<style>
+		body
+		{
+			width: 100%;
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#baloon
+		{
+			width: 200px;
+			height: 200px;
+			background-color: red;
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div id="baloon"></div>
+</body>
+<script type="text/javascript">
+	var ballonsize = 200;
+	var elem;
+	var colorstack = new Array('red', 'green', 'blue');
+	var i = 0;
+	window.onload = function setlisteners()
+	{
+		elem = document.getElementById('baloon');
+		elem.addEventListener("click", growBaloon);
+		elem.addEventListener("mouseleave", shrinkBaloon);
+	}	
+	function growBaloon()
+	{
+		ballonsize += 10;
+		if(ballonsize > 420)
+		{
+			elem.style.width = ballonsize - 220 + 'px';
+			elem.style.height = ballonsize - 220 + 'px';
+			ballonsize = 200;
+		}
+		else
+		{
+			elem.style.width = ballonsize + 'px';
+			elem.style.height = ballonsize + 'px';
+			i++;
+			if (i > 2)
+				i = 0;
+	
+			elem.style.backgroundColor = colorstack[i];
+			
+		}	
+		console.log(ballonsize);
+		console.log(i);
+
+		
+	}
+	function shrinkBaloon()
+	{
+		ballonsize -= 5;
+		if(ballonsize < 200)
+		{
+			elem.style.width = '200px';
+			elem.style.height = '200px';
+			ballonsize = 200;
+			i--;
+			if (i < 0)
+				i = 2;
+			elem.style.backgroundColor = colorstack[i];
+			
+		}
+		else
+		{
+			elem.style.width = ballonsize + 'px';
+			elem.style.height = ballonsize + 'px';
+			i--;
+			if (i < 0)
+				i = 2;
+			elem.style.backgroundColor = colorstack[i];
+		
+		}	
+		console.log(ballonsize);
+		console.log(i);
+	}
+	</script>
+</html>

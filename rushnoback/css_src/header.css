@@ -1,0 +1,126 @@
+header
+{
+	width: 90%;
+	margin: 0 auto;
+	display: flex;
+	flex-basis: auto;
+	max-height: 170px;
+}
+ul
+{
+	list-style: none;
+}
+a
+{
+	text-decoration: none;
+}
+.logo_wrapper
+{
+	height: auto;
+}
+.logo img
+{
+	width: 100%;
+	max-height: 170px;
+	max-width:  270px;
+}
+.nav_wrapper
+{
+	flex: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+.categories
+{
+	width: 100%;
+	height: 70px;
+}
+.categories ul
+{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+.categories ul li
+{
+	display: flex;
+	width: 30%;
+	height: 100%;
+}
+.categories ul li a
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	padding-left: 10%;
+	width: 100%;
+	height: 100%;
+	cursor: pointer;
+	font-size: 1.5em;
+	border-top: 1px solid black; 
+	border-bottom:  1px solid black; 
+		border-radius: 5px;
+}
+.bucket_login_wrapper
+{
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+}
+.bucket
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 50%;
+	margin-top: 4%;
+}
+.bucket_button
+{
+	width: 100%;
+	height: 100%;
+}
+.bucket_button a
+{
+	width: 100%;
+	height: 100%;
+}
+.bucket_button a img
+{
+	width: 100%;
+	height: 100%;
+}
+.login_wrapper
+{
+	display: flex;
+	justify-content: space-around;
+	align-items: flex-end;
+	width: 100%;
+	height: 50%;
+}
+.authoriz 
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 40%;
+	height: 30%;
+	font-size: 0.7em;
+	margin-bottom: 5%;
+	padding: 0;
+	border-radius: 5px;
+}
+.authoriz a
+{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+}
+
+
+

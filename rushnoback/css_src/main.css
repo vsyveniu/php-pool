@@ -1,0 +1,140 @@
+html, body
+{
+	height: 100%;
+	width: 100%;background-color: #F0F8FF;
+}
+article
+{
+	width: 90%;
+	margin:  0 auto;
+	display: flex;
+	justify-content: space-around;
+	margin-top: 3%;
+}
+.maincontent
+{
+	display: flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	width: 83%;
+}
+.item
+{
+	display: flex;
+	flex-direction: column;
+	width: 32%;
+	height: 500px;
+	max-height: 330px;
+	max-width: 250px;
+	margin-left: 5%;
+	margin-top: 1%;
+	margin-bottom:  1%;
+	flex-basis: 250px;
+	border-radius: 5px;
+	background-color: white;
+}
+.type
+{
+	display: flex;
+	width: 12%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.type ul
+{
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+.type ul li
+{
+	width: 100%;
+	height: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 15%;
+}
+.type ul li a
+{
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	border-top: 1px solid black;
+	border-bottom:  1px solid black;
+	border-radius: 5px;
+	padding: 5px;
+}
+.name
+{	
+	width: 100%;
+	height: 10%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.item img
+{
+	width: 100%;
+	max-height: 200px;
+}
+.meta_wrapper
+{
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+}
+.meta_wraper .count
+{
+	width: 48%;
+}
+.meta_wraper .price
+{
+	width: 48%;
+}
+.count, .price
+{
+	font-size: 1em;
+	margin-top: 4px;
+	margin-bottom: 4px;
+}
+.description
+{
+	width: 100%;
+	width: 100%;
+	margin-left: 3%;
+}
+.buy_wrapper
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 20%;
+}
+.buy
+{
+	width: 70px;
+	margin-bottom: 4%;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.hidden
+{
+	display: none;
+}
+
+
+
+
+
+
+
+
+

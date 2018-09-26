@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calc</title>
+</head>
+<body>
+	<input id='leftval' type="text" name="leftval">
+	<select id='operator' name="operators">
+		<option value="add">+</option>
+		<option value="sub">-</option>
+		<option value="mult">*</option>
+		<option value="div">/</option>
+		<option value="mod">%</option>
+	</select>	
+	<input id='rightval' type="text" name="rightval">
+	<input id='result' type="submit" name="submit" value="Try me!" onclick="calc()">
+</body>
+<script type="text/javascript">
+	var useme = setInterval(useme, 30000);
+	window.onload = function setlisteners()
+	{
+		leftval = document.getElementById('leftval');
+		leftval.addEventListener('input', getvalues);
+		rightval = document.getElementById('rightval');
+		rightval.addEventListener('input', getvalues);
+		operator = document.getElementById('operator');
+		operator.addEventListener('input', getvalues);
+	}
+	function useme()
+	{
+		alert('Please, use me...');
+	}
+	function getvalues()
+	{
+		leftval = document.getElementById('leftval').value;
+		operator = document.getElementById('operator').value;
+		rightval = document.getElementById('rightval').value;
+	}
+	function ft_check(num1, num2)
+	{
+		if (num1 < 0 || num2 < 0) 
+		{
+			return false;
+		}
+		return true;
+	}
+	function calc()
+	{
+		var result = 0;
+		if(operator == 'add')
+		{
+			if(ft_check(+leftval, +rightval))
+			{
+				result = (+leftval) + (+rightval);
+				alert(result);
+				console.log(result);
+			}
+			else
+				alert('Error :(')
+		}
+		if(operator == 'sub')
+		{
+			if(ft_check(+leftval, +rightval))
+			{
+				result = (+leftval) - (+rightval);
+				alert(result);
+				console.log(result);
+			}
+			else
+				alert('Error :(')
+		}
+		if(operator == 'mult')
+		{
+			if(ft_check(+leftval, +rightval))
+			{
+				result = (+leftval) * (+rightval);
+				alert(result);
+				console.log(result);
+			}
+			else
+				alert('Error :(')
+		}
+		if(operator == 'div')
+		{
+			if(ft_check(+leftval, +rightval))
+			{
+				if (+leftval == 0 || +rightval == 0)
+				{
+					var str = "It's over 9000!";
+					alert(str);
+					console.log(str);
+				}
+				else if(ft_check(+leftval, +rightval))
+				{
+					result = (+leftval) / (+rightval);
+					alert(result);
+					console.log(result);
+				}
+			}
+			else
+				alert('Error :(')
+		}
+		if(operator == 'mod')
+		{
+			if(ft_check(+leftval, +rightval))
+			{
+				if (+leftval == 0 || +rightval == 0)
+				{
+					var str = "It's over 9000!";
+					alert(str);
+					console.log(str);
+				}
+				else if(ft_check(+leftval, +rightval))
+				{
+					result = (+leftval) % (+rightval);
+					alert(result);
+					console.log(result);
+				}
+			}	
+			else
+				alert('Error :(')
+		}									
+	}
+</script>
+</html>

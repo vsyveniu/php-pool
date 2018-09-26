@@ -1,0 +1,29 @@
+footer
+{
+	width: 90%;
+	margin: 0 auto;
+	align-self: flex-end;
+	display: flex;
+	flex-direction: column;
+	flex-basis: auto;
+	margin-top: 3%;	
+}
+
+.contacts
+{
+	display: flex;
+}
+.email, .numbers
+{
+	margin-left: 5%;
+}
+.authors
+{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.authors p
+{
+	margin-left: 1%;
+}
